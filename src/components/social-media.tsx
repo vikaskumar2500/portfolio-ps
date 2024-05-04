@@ -39,7 +39,7 @@ export const SocialMedia = () => {
   return (
     <ul className="flex gap-3">
       {SOCIAL_MEDIA.map(({ id, href, alt, label, src }) => (
-        <Link title={label} href={href} target="_blank">
+        <Link key={id} title={label} href={href} target="_blank">
           <Image src={src} alt={alt} width={36} height={20} priority />
         </Link>
       ))}
