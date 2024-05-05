@@ -10,10 +10,10 @@ export const Footer = () => {
 
       <div className="flex items-center justify-center flex-col">
         <p className="text-center max-w-full">
-          I'm currently looking for full-time React Developer/Frontend Developer
-          opportunities! If you know of any positions available, if you have any
-          questions, or if you just want to say hi, please feel free to email me
-          at,
+          I&apos;m currently looking for full-time React Developer/Frontend Developer
+          opportunities! If you know of any positions available&lsquo; if you have any
+          questions&lsquo; or if you just want to say hi&lsquo; please feel free to
+          email me at&lsquo;
         </p>
         <Link
           href="mailto:vikas.nits8084@gmail.com"
@@ -25,7 +25,12 @@ export const Footer = () => {
       <div className="w-full flex items-center justify-center">
         <p className="text-center gap-1 flex flex-row items-center justify-center w-full">
           <span className="font-bold">{"</>"}</span> with 💙 by
-          <Link href={"https://github.com/vikaskumar2500"} className="px-2 rounded-md bg-gray-600 text-white">Vikas Kumar</Link>
+          <Link
+            href={"https://github.com/vikaskumar2500"}
+            className="px-2 rounded-md bg-gray-600 text-white"
+          >
+            Vikas Kumar
+          </Link>
           using
           <Image
             src={"/reactjslogo.svg"}
