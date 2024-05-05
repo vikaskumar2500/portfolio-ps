@@ -1,3 +1,4 @@
+import { Title } from "@/components/title";
 import Image from "next/image";
 import React from "react";
 
@@ -20,8 +21,8 @@ export default function AboutPage() {
         />
       </div>
       <div className="col-span-3 flex flex-col items-center justify-center">
-        <h2 className="text-[3.5rem]">About Me</h2>
-        <p className="text-lg font-extralight p-10 font-sans">
+        <Title title="About Me"/>
+        <p className="text-lg font-extralight p-10 font-sans text-center">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
           nam velit ipsum earum est eum dolores suscipit excepturi illo tenetur
           temporibus error cumque maxime officia consequatur esse quas

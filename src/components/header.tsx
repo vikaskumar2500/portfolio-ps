@@ -16,7 +16,7 @@ export const Header = () => {
   const { active, handleActive } = useActiveLink();
 
   return (
-    <header className="flex fixed top-0 left-0 w-full border border-gray-300">
+    <header className="flex fixed top-0 left-0 w-full border bg-gray-200/80 z-20 border-gray-300">
       <nav>
         <ul className="flex gap-5 w-full p-5 py-3">
           {HEADER_NAV.map(({ id, label, type, href }: NavData) => (

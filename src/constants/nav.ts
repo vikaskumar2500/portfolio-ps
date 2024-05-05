@@ -1,6 +1,6 @@
 export enum Type {
-  link="link",
-  button="button",
+  link = "link",
+  button = "button",
 }
 
 export const HEADER_NAV = [
@@ -20,6 +20,12 @@ export const HEADER_NAV = [
     id: 3,
     label: "Resume",
     type: Type.button,
+  },
+  {
+    id: 6,
+    label: "Experiences",
+    type: Type.link,
+    href: "#experiences",
   },
   {
     id: 4,
