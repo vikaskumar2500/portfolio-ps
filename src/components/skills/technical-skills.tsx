@@ -1,4 +1,4 @@
-import { ProgressBar } from "@/ui/progress-bar";
+import { ProgressBar } from "@/components/ui/progress-bar";
 import React from "react";
 
 const TECHNICALSKILLS = [
@@ -14,7 +14,7 @@ export const TechnicalSkills = () => {
   return (
     <ul className="space-y-2 flex flex-wrap w-full items-center justify-center">
       {TECHNICALSKILLS.map(({ id, label, per }) => (
-        <li key={id} className="w-1/2 px-5 py-2 flex flex-col">
+        <li key={id} className="w-full md:w-1/2 px-5 py-2 flex flex-col">
           <span className="font-semibold">{label}</span>
           <ProgressBar p={per} />
         </li>

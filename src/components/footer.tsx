@@ -1,11 +1,11 @@
 import React from "react";
-import { Title } from "./title";
 import Link from "next/link";
 import Image from "next/image";
+import { Title } from "./title";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-200 px-40 py-20 gap-5 w-full flex items-center justify-center flex-col">
+    <footer className="bg-gray-200 px-5 md:px-40 py-20 gap-5 w-full flex items-center justify-center flex-col">
       <Title title="Get In Touch" />
 
       <div className="flex items-center justify-center flex-col">
@@ -26,6 +26,7 @@ export const Footer = () => {
         <p className="text-center gap-1 flex flex-row items-center justify-center w-full">
           <span className="font-bold">{"</>"}</span> with 💙 by
           <Link
+            target="_blank"
             href={"https://github.com/vikaskumar2500"}
             className="px-2 rounded-md bg-gray-600 text-white"
           >

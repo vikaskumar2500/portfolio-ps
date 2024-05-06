@@ -39,7 +39,7 @@ export const PROJECTS = [
     updatedAt: "Feb 5, 2023",
   },
   {
-    id: 2,
+    id: 4,
     title: "Vikas Kumar",
     description: "Config files form my github profile.",
     clone: "",

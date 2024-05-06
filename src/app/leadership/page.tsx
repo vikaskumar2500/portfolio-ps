@@ -1,16 +1,27 @@
+"use client";
+import React, { useEffect } from "react";
+import { ProjectOverView } from "@/components/leadership/overview";
 import { Title } from "@/components/title";
-import React from "react";
+import { useInView } from "react-intersection-observer";
+import { useActiveLink } from "@/hooks/use-active-link";
 
 export default function LeaderShip() {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { handleActive } = useActiveLink();
+
+  useEffect(() => {
+    if (inView) handleActive("#leadership");
+  }, [inView, handleActive]);
   return (
     <section
+      ref={ref}
       id="leadership"
-      className="px-32 py-10 w-full flex flex-col gap-10 items-center justify-center"
+      className="px-10 md:px-32 py-10 w-full min-h-screen flex pt-20 flex-col gap-10 items-center justify-center"
     >
       <Title title="Leadership" />
-      <div className=" grid grid-cols-2">
+      <div className="grid relative grid-cols-1 w-full lg:grid-cols-2 gap-10">
         <div className="col-span-1">
-          <p>
+          <p className="text-center md:text-left w-full">
             As a React developer with leadership experience, I bring technical
             expertise, project management skills, and strong communication
             abilities to the table. I have a proven track record of building
@@ -29,9 +40,7 @@ export default function LeaderShip() {
             positive, collaborative work environment.
           </p>
         </div>
-        <div className="col-span-1">
-          vikas
-        </div>
+        <ProjectOverView />
       </div>
     </section>
   );

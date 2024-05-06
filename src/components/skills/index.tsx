@@ -14,9 +14,10 @@ export default function Skills() {
           type="button"
           onClick={() => setActiveButton(0)}
           className={cn(
-            "border w-full border-gray-500 px-5 py-2 rounded-t-md col-span-1",
-            activeButton === 0 && "border-b-0",
-            activeButton === 1 && "border-t-0 border-l-0 border-r-0"
+            "border w-full text-blue-500 border-gray-500  px-5 py-2 rounded-t-md col-span-1",
+            activeButton === 0 && "border-b-0 text-gray-700",
+            activeButton === 1 &&
+              "border-t-0 border-l-0 border-r-0 md:hover:border-[0.1px] hover:border-t-gray-200 hover:border-l-gray-200"
           )}
         >
           Technical Skills
@@ -25,9 +26,10 @@ export default function Skills() {
           type="button"
           onClick={() => setActiveButton(1)}
           className={cn(
-            "border border-gray-500 px-5 py-2 rounded-t-md col-span-1",
-            activeButton === 1 && "border-b-0",
-            activeButton === 0 && "border-t-0 border-l-0 border-r-0"
+            "border border-gray-500 text-blue-500 px-5 py-2 rounded-t-md col-span-1",
+            activeButton === 1 && "border-b-0 text-gray-700 ",
+            activeButton === 0 &&
+              "border-t-0 border-l-0 border-r-0 md:hover:border-[0.1px] hover:border-t-gray-200 hover:border-r-gray-200"
           )}
         >
           Soft Skills

@@ -39,8 +39,8 @@ export const SocialMedia = () => {
   return (
     <ul className="flex gap-3">
       {SOCIAL_MEDIA.map(({ id, href, alt, label, src }) => (
-        <Link key={id} className="border border-gray-300 p-1 rounded-md" title={label} href={href} target="_blank">
-          <Image src={src} alt={alt} width={36} height={20} priority />
+        <Link key={id} className="relative hover:text-black" title={label} href={href} target="_blank">
+          <Image src={src} style={{width:"auto", height:"auto"}} color="blue" alt={alt} className="bg-gray-200 rounded-sm" width={36} height={20} priority />
         </Link>
       ))}
     </ul>
